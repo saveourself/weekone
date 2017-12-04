@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myapp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts/iconfont.css">
+<body ng-controller="myctrl">
+    <div class="wrap">
+        <header class="header">
+            <span></span>
+            <span>公司</span>
+            <span> <i class="icon iconfont icon-fangdajing"></i></span>
+        </header>
+        <section class="section">
+            <ul>
+                <li>融资<i class="icon iconfont icon-xiangxia"></i></li>
+                <li>规模<i class="icon iconfont icon-xiangxia"></i></li>
+                <li>行业<i class="icon iconfont icon-xiangxia"></i></li>
+            </ul>
+            <div class="box">
+                 <dl ng-repeat="item in arr">
+                    <dt><img src="{{item.img}}" alt=""></dt>
+                    <dd>
+                        <h4>{{item.title}}</h4>
+                        <h3>{{item.address}}</h3>
+                        <h2>{{item.number}}</h2>
+                        <h5>{{item.h5}} <span>{{item.weizhi}}</span>{{item.num}}</h5>
+                    </dd>
+                </dl> 
+            </div>
+        </section>
+        <footer class="footer">
+            <span>
+                 <i class="icon iconfont icon-wode"></i>
+                 <a>职位</a>
+            </span>
+            <span>
+                 <i class="icon iconfont icon-gongzuo bg"></i>
+                 <a>公司</a>
+            </span>
+                <span>
+                 <i class="icon iconfont icon-xiaoxi"></i>
+                 <a>消息</a>
+            </span>
+                <span>
+                 <i class="icon iconfont icon-fenxiang"></i>
+                 <a>我的</a>
+            </span>
+        </footer>
+    </div>
+   
+</body>
+<script src="angular.js/angular.min.js"></script>
+<script>
+    angular.module("myapp",[])
+        .controller("myctrl",function($scope,$http){
+            $http({
+                method:"get",
+                url:"http://localhost:8888/getdata"
+            }).then(function(response){
+                $scope.arr=response.data
+            },function(error){
+                 console.log(error)
+            })
+
+        })
+</script>
+</html>

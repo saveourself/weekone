@@ -1,0 +1,38 @@
+[
+    {
+        "img":"images/pic1.png",
+        "title":"百度",
+        "address":"北京市海淀区西北旺",
+        "number":"互联网 | 已上市 | 100000人以上",
+        "h5":"热招：",
+        "weizhi":"前端工程师",
+        "num":"等2382个职位"
+    },
+    {
+        "img":"images/pic2.png",
+        "title":"北京来为科技",
+        "address":"北京市昌平区沙河",
+        "number":"IT软件 | 未融资 | 100-499人",
+        "h5":"热招：",
+        "weizhi":"前端开发工程师",
+        "num":"等164个职位"
+    },
+    {
+        "img":"images/pic3.png",
+        "title":"最库科技",
+        "address":"北京市海淀区五棵松",
+        "number":"互联网 | A轮 | 20-99人",
+        "h5":"热招：",
+        "weizhi":"web前端开发工程师",
+        "num":"等12个职位"
+    },
+    {
+        "img":"images/pic4.png",
+        "title":"京东集团",
+        "address":"北京市大兴区",
+        "number":"移动互联网 | 已上市 | 1000人以上",
+        "h5":"热招：",
+        "weizhi":"webGL",
+        "num":"等55个职位"
+    }
+]

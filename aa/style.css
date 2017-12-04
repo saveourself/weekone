@@ -1,0 +1,125 @@
+*{
+    margin:0;
+    padding:0;
+    list-style:none;
+    text-decoration: none;
+    font-size:.14rem;
+    font-family: "楷体"
+}
+body,html,.wrap{
+    width:100%;
+    height:100%;
+    overflow: hidden;
+}
+html{
+    font-size:625%;
+}
+.wrap{
+    display:flex;
+    flex-direction: column;
+}
+.header{
+    width:100%;
+    height:.5rem;
+    display:flex;
+    background: #53cac3;
+    color:#fff;
+}
+.header span{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.header span:nth-child(2){
+    flex:1;
+    font-size:.18rem;
+}
+.header span:nth-child(3) i.icon{
+    margin-right:.15rem;
+    font-size:.18rem;
+}
+.section{
+    flex:1;
+    overflow-y: scroll;
+}
+.section ul{
+    width:100%;
+    height:.5rem;
+
+}
+.section ul li{
+    float:left;
+    width:33.3%;
+    text-align: center;
+    line-height: .5rem;
+    color:#797979;
+    font-size:.16rem;
+}
+.section ul li i.icon{
+    font-size:.1rem;
+    margin-left:.05rem;
+    color:#e5e5e5;
+}
+.section .box{
+    width:100%;
+    height:auto;
+}
+.section .box dl{
+    width:100%;
+    height:1.5rem;
+    position:relative;
+    margin-top:.15rem;
+}
+.section .box dl dt{
+    position:absolute;
+    left:.1rem;
+    top:.1rem;
+}
+.section .box dl dt img{
+    width:1rem;
+    height:1rem;
+}
+.section .box dl dd{
+    margin-left:1.2rem;
+    padding-top:.05rem;
+    line-height: 1.5;
+    
+}
+.section .box dl dd h4{
+    font-size:.18rem;
+    color:#333333;
+}
+.section .box dl dd h3{
+    color:#797979;
+     font-size:.16rem;
+
+}
+.section .box dl dd h2{
+     color:#797979;
+      font-size:.15rem;
+     
+
+}
+.section .box dl dd h5{
+    color:#b0b0b0;
+    
+}
+.section .box dl dd h5 span{
+    color:#7bd6d1;
+}
+.footer{
+    width:100%;
+    height:.5rem;
+    display:flex;
+}
+.footer span{
+    display:flex;
+    flex:1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.5
+}
+.bg{
+    color:#53cac3;
+}
